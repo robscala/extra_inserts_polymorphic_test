@@ -12,8 +12,7 @@ import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OneToOne;
 
 @Entity
-public class Person
-{
+public class Person {
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
     private long id;

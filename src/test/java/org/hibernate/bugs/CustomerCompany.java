@@ -10,8 +10,7 @@ import jakarta.persistence.ManyToOne;
 
 @Entity
 @DiscriminatorValue("9")
-public class CustomerCompany extends Company
-{
+public class CustomerCompany extends Company {
     private String zipCode;
 
     @ManyToOne(fetch = FetchType.LAZY, cascade = { CascadeType.PERSIST, CascadeType.REMOVE})
